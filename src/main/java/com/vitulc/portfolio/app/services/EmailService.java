@@ -15,8 +15,8 @@ public class EmailService {
 
     public void sendEmail(EmailDto emailDto){
         var message =  new SimpleMailMessage();
-        message.setFrom("");
-        message.setTo("");
+        message.setFrom("diego.rb0307@gmail.com");
+        message.setTo("diego.rb0307@gmail.com");
         message.setSubject(emailDto.subject());
         message.setReplyTo(emailDto.sender());
         String messageText = "Email sent by: " + emailDto.sender() + "\n\n" + emailDto.body();
